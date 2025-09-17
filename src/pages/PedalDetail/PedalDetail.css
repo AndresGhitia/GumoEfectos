@@ -1,0 +1,332 @@
+.pedal-detail {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+    color: #222;
+}
+
+/* Hero */
+.hero-section {
+    height: 500px;
+    overflow: hidden;
+    transition: opacity 0.2s ease-out;
+    margin: 0px 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenido detalle */
+.detail-content {
+    min-height: 80vh;
+    display: flex;
+    margin: 0px 50px;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Imagen pedal */
+.detail-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pedal-image {
+    width: 450px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Texto */
+.detail-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.pedal-title{
+    border-bottom: 1px solid #ccc;
+}
+
+.pedal-name {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.pedal-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+
+.pedal-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+/* Precio + botón */
+.pedal-cart {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* separación entre precio y botón */
+  border-bottom: 1px solid #ccc;
+    
+}
+
+/* Precio */
+.pedal-price {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.pedal-price strong {
+  font-size: 26px;
+  font-weight: bold;
+  color: #111;
+}
+
+.pedal-price span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  padding-bottom: 10px;
+}
+
+/* Botón */
+.add-to-cart {
+  background-color: #72e096; /* verde suave */
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #5ccc82; /* verde más oscuro al hover */
+}
+
+.out-of-stock {
+padding: 10px;
+  background-color: #6b0606;
+  cursor: not-allowed;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Especificaciones */
+
+.pedal-specs h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.pedal-specs table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #333;
+}
+
+.pedal-specs td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pedal-specs td:first-child {
+  font-weight: bold;
+  width: 40%;
+  color: #111;
+}
+
+.pedal-specs td:last-child {
+  text-align: left;
+}
+
+.pedal-specs p{
+    padding: 10px;
+    font-style: italic;
+}
+
+.pedal-controls {
+  margin: 30px 50px;
+}
+
+.pedal-controls h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.controls-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas */
+  gap: 20px 40px; /* espacio entre filas y columnas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.controls-list li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.controls-list li strong {
+  font-weight: 600;
+  color: #111;
+}
+
+
+/* Responsive: tablets */
+@media (max-width: 1024px) {
+    .hero-section {
+        height: 350px;
+        margin: 0 30px;
+    }
+
+    .detail-content {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .pedal-image {
+        width: 350px;
+    }
+
+    .pedal-name {
+        font-size: 45px;
+        letter-spacing: 6px;
+    }
+
+    .pedal-subtitle {
+        font-size: 18px;
+    }
+
+    .pedal-price strong {
+        font-size: 22px;
+    }
+}
+
+/* Responsive: tablets y móviles grandes */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 250px;
+        margin: 0 20px;
+    }
+
+    .detail-content {
+        flex-direction: column;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .detail-left {
+        justify-content: center;
+    }
+
+    .pedal-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .detail-right {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .pedal-name {
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+
+    .pedal-subtitle {
+        font-size: 16px;
+    }
+
+    .pedal-description {
+        font-size: 14px;
+    }
+
+    .pedal-cart {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .pedal-controls {
+        margin: 20px;
+    }
+
+    .controls-list {
+        grid-template-columns: 1fr; /* una columna en móviles */
+        gap: 15px;
+    }
+}
+
+/* Responsive: móviles pequeños */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 180px;
+        margin: 0 10px;
+    }
+
+    .pedal-image {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .pedal-name {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .pedal-subtitle {
+        font-size: 14px;
+    }
+
+    .pedal-description {
+        font-size: 13px;
+    }
+
+    .pedal-price strong {
+        font-size: 20px;
+    }
+
+    .pedal-cart {
+        gap: 10px;
+    }
+
+    .pedal-controls h2 {
+        font-size: 1.3rem;
+    }
+}
+

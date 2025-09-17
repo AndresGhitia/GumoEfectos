@@ -1,0 +1,153 @@
+/* ===== Hero Container ===== */
+.hero-container {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen con difuminado lateral */
+.image-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  opacity: 0;                /* inicio invisible */
+  animation: fadeIn 2s ease-in-out forwards; /* animación */
+}
+
+/* Keyframes del fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05); /* leve zoom out para un efecto más pro */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);    /* vuelve al tamaño normal */
+  }
+}
+
+/* Overlay oscuro con gradiente */
+.hero-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.8) 20%,  
+    rgba(0, 0, 0, 0) 100%     
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===== Overlay Promo Text ===== */
+.hero-overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #d3ba77;
+  z-index: 3;
+  font-family: 'Georgia', serif;
+}
+
+.hero-overlay-text h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.sale-details {
+  margin: 15px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.sale-details p {
+  margin: 5px 0;
+}
+
+/* ===== Hero Content ===== */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Botón */
+.hero-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #333;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+.hero-button:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}

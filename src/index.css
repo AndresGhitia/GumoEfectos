@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    color: #373737;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app {
+    max-width: 100%;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden; /* Previene cualquier desbordamiento */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .app {
+        width: 100%;
+        padding: 0px;
+    }
+}
