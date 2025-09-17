@@ -11,12 +11,10 @@ export default function CartPage() {
     <div className="cart-page">
       <h1>Tu Carrito</h1>
 
-      {/* Si no hay productos */}
       {cart.length === 0 ? (
         <p>No tienes productos en el carrito.</p>
       ) : (
         <>
-          {/* Items del carrito */}
           <div className="cart-items">
             {cart.map((item) => (
               <div key={item.id} className="cart-item">
@@ -36,7 +34,6 @@ export default function CartPage() {
             ))}
           </div>
 
-          {/* Total y acciones */}
           <div className="cart-total">
             <h2>Total: ${total}</h2>
             <button onClick={() => alert("Checkout en construcción 🚧")}>

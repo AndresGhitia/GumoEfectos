@@ -83,7 +83,6 @@
   background: #e04848;
 }
 
-/* Total */
 .cart-total {
   margin-top: 40px;
   padding: 20px;
@@ -111,7 +110,6 @@
   background: #444;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .cart-item {
     flex-direction: column;

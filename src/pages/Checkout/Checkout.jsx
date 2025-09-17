@@ -105,7 +105,6 @@ export default function Checkout() {
                     >
                         {({ isSubmitting }) => (
                             <Form>
-                                {/* SECCIÓN 1: CORREO */}
                                 <div className="checkout-section card">
                                     <h2>Correo de contacto</h2>
                                     <label>
@@ -114,7 +113,6 @@ export default function Checkout() {
                                     </label>
                                 </div>
 
-                                {/* SECCIÓN 2: DIRECCIÓN DE ENVÍO */}
                                 <div className="checkout-section card">
                                     <h2>Dirección de envío</h2>
                                     <div className="grid-2">
@@ -152,7 +150,6 @@ export default function Checkout() {
                                     <ErrorMessage name="postalCode" component="div" className="error" />
                                 </div>
 
-                                {/* SECCIÓN 3: MÉTODO DE PAGO */}
                                 <div className="checkout-section card">
                                     <h2>Método de Pago</h2>
                                     <label className="payment-option">

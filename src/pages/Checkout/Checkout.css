@@ -90,10 +90,6 @@
   margin-top: 4px;
 }
 
-/* --------- RESUMEN DE PEDIDO --------- */
-/* Checkout.css */
-
-/* Contenedor del resumen de pedido */
 .checkout-summary {
     background: #ffffff;
     border-radius: 16px;
@@ -104,15 +100,13 @@
     transition: transform 0.2s ease;
 }
 
-/* Título de la sección */
 .checkout-summary h2 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #1f2937; /* Gris oscuro */
+    color: #1f2937; 
 }
 
-/* Lista de items */
 .summary-items {
     list-style: none;
     padding: 0;
@@ -126,7 +120,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    border-bottom: 1px solid #e5e7eb; /* Gris claro */
+    border-bottom: 1px solid #e5e7eb; 
     padding-bottom: 8px;
 }
 
@@ -152,10 +146,9 @@
 .item-qty,
 .item-price {
     font-size: 0.9rem;
-    color: #6b7280; /* Gris medio */
+    color: #6b7280;
 }
 
-/* Resumen del total */
 .order-summary {
     border-top: 1px solid #e5e7eb;
     padding-top: 15px;
@@ -184,7 +177,6 @@
     margin-top: 8px;
 }
 
-/* Botón cancelar */
 .cancel-btn {
     background: #f9fafb;
     color: #6b7280;

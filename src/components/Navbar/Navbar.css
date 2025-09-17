@@ -88,7 +88,6 @@
   display: flex;
 }
 
-/* Botón hamburguesa */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -100,7 +99,6 @@
   cursor: pointer;
   padding: 0;
   margin-left: auto;
-  /* empuja el botón a la derecha */
 }
 
 .hamburger span {
@@ -111,7 +109,6 @@
   transition: 0.3s;
 }
 
-/* Animación hamburguesa → X */
 .hamburger.is-active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -124,7 +121,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Contador del carrito */
 .navigation-item.w-nav-link {
   position: relative;
   cursor: pointer;
@@ -152,13 +148,11 @@
   transition: transform 0.2s ease;
 }
 
-/* Animación al añadir producto */
 .navigation-item.w-nav-link:hover .cart-count {
   transform: scale(1.2);
 }
 
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -176,8 +170,6 @@
     border-top: 1px solid #eee;
     padding: 20px 0;
     gap: 10px;
-
-    /* animación slide-down */
     transform: translateY(-20px);
     opacity: 0;
     transition: all 0.3s ease;

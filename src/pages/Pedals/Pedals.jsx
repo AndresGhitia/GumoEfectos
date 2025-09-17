@@ -40,7 +40,6 @@ function Pedals() {
                 </div>
             </div>
 
-            {/* Grid de productos */}
             <div className='pedals-grid'>
                 {productos.length > 0 ? (
                     productos.map(prod => (
@@ -53,9 +52,6 @@ function Pedals() {
                             <div className='pedals-overlay'>
                                 <h3>{prod.name}</h3>
                                 {prod.subtitle && <p>{prod.subtitle}</p>}
-                            </div>
-                            <div className='pedals-info'>
-                                {/* {prod.price && <p className='pedals-price'>${prod.price}</p>} */}
                             </div>
                         </Link>
                     ))

@@ -35,12 +35,10 @@ export default function PedalDetail() {
 
     return (
         <div className="pedal-detail">
-            {/* Hero */}
             <div className="hero-section">
                 <img src={producto.hero_detail} alt={producto.name} className="hero-image" />
             </div>
 
-            {/* Contenido detalle */}
             <div className="detail-content">
                 <div className="detail-left">
                     <img src={producto.image} alt={producto.name} className="pedal-image" />
@@ -51,7 +49,6 @@ export default function PedalDetail() {
                         <h3 className="pedal-subtitle">{producto.subtitle}</h3>
                     </div>
 
-                    {/* Precio + botón */}
                     <div className="pedal-cart">
                         <div className="pedal-price">
                             <strong>${producto.price}</strong>
@@ -73,7 +70,6 @@ export default function PedalDetail() {
 
                     <p className="pedal-description">{producto.description}</p>
 
-                    {/* Especificaciones */}
                     <div className="pedal-specs">
                         <h2>ESPECIFICACIONES</h2>
                         <table>

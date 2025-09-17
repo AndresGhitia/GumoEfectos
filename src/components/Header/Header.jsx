@@ -12,7 +12,6 @@ function Header() {
         alt="Hero Gumo Efectos"
       />
 
-      {/* Overlay de texto estilo promo */}
       <div className="hero-overlay-text">
         <h1>TRANSFERENCIA BANCARIA</h1>
         <div className="sale-details">

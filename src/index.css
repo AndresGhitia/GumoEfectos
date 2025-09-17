@@ -11,7 +11,7 @@ body {
     width: 100%;
     min-height: 100vh;
     color: #373737;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-x: hidden;
     background-color: #f9f9f9;
 }
 
@@ -24,10 +24,10 @@ a {
     max-width: 100%;
     margin: auto;
     padding: 0px;
-    overflow-x: hidden; /* Previene cualquier desbordamiento */
+    overflow-x: hidden; 
 }
 
-/* Ajustes para dispositivos móviles */
+
 @media (max-width: 768px) {
     body {
         width: 100%;
